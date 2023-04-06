@@ -1,0 +1,184 @@
+:root {
+  /* Colors */
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white-color: hsl(0, 0%, 100%);
+  --error-msg-color: #CC7860;
+
+  /* Fonts */
+  --space-mono-ff: 'Space Mono', monospace;
+  --form-inputs-fs: 24px;
+  --bold-fw: 700;
+  --regular-fw: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-grayish-cyan);
+  font-family: var(--space-mono-ff);
+}
+
+label {
+  color: var(--dark-grayish-cyan);
+  font-weight: var(--bold-fw);
+}
+
+input {
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 7px;
+  text-align: right;
+  background-color: var(--very-light-grayish-cyan);
+  background-repeat: no-repeat;
+  background-position: 17px 15px;
+  font-size: var(--form-inputs-fs);
+  font-family: var(--space-mono-ff);
+  font-weight: var(--bold-fw);
+  color: var(--dark-grayish-cyan);
+}
+
+input::placeholder {
+  opacity: .5;
+  color: var(--grayish-cyan);
+}
+
+.custom-tip::placeholder {
+  color: var(--very-dark-cyan);
+  text-align: center;
+}
+
+.bill-input {
+  margin-bottom: 1.375rem;
+  background-image: url('../img/icon-dollar.svg');
+}
+
+.people-number input {
+  margin-top: 12px;
+  background-image: url('../img/icon-person.svg');
+}
+
+.logo {
+  text-align: center;
+  justify-content: center;
+  margin-top: 1.7rem;
+  margin-bottom: 5.3rem;
+}
+
+.tip-calculator {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding: 2.4rem;
+  border-radius: 22px;
+}
+
+.bills-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.bills-wrapper label {
+  margin: 12px 0px;
+}
+
+.tips-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 15px;
+  margin-bottom: 2.3rem;
+}
+
+.tips-wrapper .tip {
+  background-color: var(--very-dark-cyan);
+  padding: 8px 42px;
+  border-radius: 7px;
+  font-size: var(--form-inputs-fs);
+  color: var(--white-color);
+  font-weight: var(--bold-fw);
+  text-align: center;
+  cursor: pointer;
+}
+
+.bills-wrapper input,
+.people-number input {
+  width: 100%;
+}
+
+.people-number label {
+  margin-bottom: 12px;
+}
+
+.tip-display {
+  background-color: var(--very-dark-cyan);
+  color: var(--white-color);
+  margin-left: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 48px 38px;
+  border-radius: 15px;
+}
+
+.reset {
+  margin-top: auto;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  font-weight: var(--bold-fw);
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+}
+
+.tips-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tips-display label {
+  color: var(--white-color);
+}
+
+.tips-display span {
+  color: var(--strong-cyan);
+  font-weight: var(--bold-fw);
+  font-size: 2.5rem;
+}
+
+.tips-display label::after {
+  content: "/ person";
+  display: block;
+  opacity: .5;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.tips-display:nth-child(even) {
+  margin-top: 30px;
+}
