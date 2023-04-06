@@ -1,8 +1,9 @@
 *.sketch
 *.fig
 *.xd
+*.md
 .DS_Store
 .prettierignore
 
-.README-template.md
-.README.md
+.README-template
+.README
