@@ -4,6 +4,3 @@
 *.md
 .DS_Store
 .prettierignore
-
-.README-template
-.README
