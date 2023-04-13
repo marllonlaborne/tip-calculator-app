@@ -19,7 +19,7 @@
   <section class="tip-calculator">
     <div class="bills-wrapper">
       <label>Bill</label>
-      <input type="number" class="bill-input" placeholder="0">
+      <input type="number" class="bill-input" placeholder="0" data-bill-input>
       <label>Select Tip %</label>
       <div class="tips-wrapper">
         <div class="tip tip-5">5%</div>
@@ -27,11 +27,12 @@
         <div class="tip tip-15">15%</div>
         <div class="tip tip-25">25%</div>
         <div class="tip tip-50">50%</div>
-        <input class="custom-tip" placeholder="Custom"></input>
+        <input class="custom-tip" placeholder="Custom" data-custom-tip></input>
       </div>
       <div class="people-number">
         <label>Number of People</label>
-        <input type="number" placeholder="0">
+        <label class="errorMessage">Can't be zero.</label>
+        <input type="number" placeholder="0" data-people-input>
       </div>
     </div>
     <div class="tip-display">
@@ -46,5 +47,7 @@
       <button class="reset">Reset</button>
     </div>
   </section>
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
