@@ -1,0 +1,13 @@
+/* Base */
+@import './styles/base/reset.css';
+@import './styles/base/global.css';
+@import './styles/base/variables.css';
+
+/* Elements */
+@import './styles/elements/logo.css';
+@import './styles/elements/tips.css';
+@import './styles/elements/inputs.css';
+@import './styles/elements/custom-tip.css';
+
+/* Layout */
+@import './styles/layout/tip-calculator.css';

@@ -1,0 +1,79 @@
+.tips-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 15px;
+  margin-bottom: 2.3rem;
+}
+
+.tips-wrapper .tip {
+  background-color: var(--very-dark-cyan);
+  padding: 8px 42px;
+  border-radius: 7px;
+  font-size: var(--form-inputs-fs);
+  color: var(--white-color);
+  font-weight: var(--bold-fw);
+  text-align: center;
+  cursor: pointer;
+}
+
+.tip.active-tip {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tip-display {
+  background-color: var(--very-dark-cyan);
+  color: var(--white-color);
+  margin-left: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 48px 38px;
+  border-radius: 15px;
+}
+
+.tips-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tips-display label {
+  color: var(--white-color);
+}
+
+.tips-display span {
+  color: var(--strong-cyan);
+  font-weight: var(--bold-fw);
+  font-size: 2.5rem;
+}
+
+.tips-display label::after {
+  content: '/ person';
+  display: block;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.tips-display:nth-child(even) {
+  margin: 30px 0px;
+}
+
+@media (max-width: 375px) {
+  .tips-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  .tip-display {
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 38px 28px;
+  }
+  .tips-display span {
+    font-size: 2rem;
+  }
+}

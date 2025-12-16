@@ -1,0 +1,13 @@
+.reset {
+  margin-top: auto;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  font-weight: var(--bold-fw);
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+}

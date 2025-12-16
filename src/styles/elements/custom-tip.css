@@ -1,0 +1,8 @@
+.custom-tip::placeholder {
+  color: var(--very-dark-cyan);
+  text-align: center;
+}
+
+.custom-tip {
+  color: var(--very-dark-cyan);
+}
