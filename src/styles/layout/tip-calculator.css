@@ -1,10 +1,10 @@
 .tip-calculator {
-  width: 900px;
+  width: 920px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--white-color);
-  padding: 2.4rem;
+  padding: 3rem;
+  gap: 2rem;
   border-radius: 22px;
 }
 

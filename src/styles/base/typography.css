@@ -1,0 +1,21 @@
+@import './variables.css';
+
+.font-lg {
+  font: 700 normal 2.5rem/1 var(--font-family);
+}
+
+.font-md-1 {
+  font: 700 normal 1.35rem/1 var(--font-family);
+}
+
+.font-md {
+  font: 700 normal 1.2rem/1 var(--font-family);
+}
+
+.font-base {
+  font: 700 normal 1rem/1 var(--font-family);
+}
+
+.font-sm {
+  font: 400 normal 0.875rem/1 var(--font-family);
+}

@@ -1,0 +1,51 @@
+.custom-tips {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 15px;
+}
+
+.custom-tips .tip {
+  padding: 14px 42px;
+  border-radius: 7px;
+  font-size: var(--form-inputs-fs);
+  text-align: center;
+  cursor: pointer;
+}
+
+.custom-tip::placeholder {
+  text-align: center;
+}
+
+.tip.active-tip {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.bills-data {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bill,
+.tips-selection,
+.people-number {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.bill input {
+  background-image: url('../assets/svg/icon-dollar.svg');
+}
+
+.people-number input {
+  background-image: url('../assets/svg/icon-person.svg');
+}
+
+@media (max-width: 375px) {
+  .tips-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}

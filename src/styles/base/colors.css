@@ -1,0 +1,34 @@
+@import './variables.css';
+@import '../helpers/error-message.css';
+
+.white {
+  color: var(--white-color);
+}
+
+.very-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+
+.grayish-cyan {
+  color: var(--grayish-cyan);
+}
+
+.error-message {
+  color: var(--error-msg-color);
+}
+
+.strong-cyan {
+  color: var(--strong-cyan);
+}
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+.bg-very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+
+.bg-very-light-grayish-cyan {
+  background-color: var(--very-light-grayish-cyan);
+}

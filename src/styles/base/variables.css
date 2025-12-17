@@ -10,7 +10,7 @@
   --error-msg-color: #cc7860;
 
   /* Fonts */
-  --space-mono-ff: 'Space Mono', monospace;
+  --font-family: 'Space Mono', monospace;
   --form-inputs-fs: 24px;
   --bold-fw: 700;
   --regular-fw: 400;

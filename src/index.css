@@ -1,13 +1,18 @@
 /* Base */
 @import './styles/base/reset.css';
+@import './styles/base/colors.css';
 @import './styles/base/global.css';
+@import './styles/base/fonts.css';
 @import './styles/base/variables.css';
+@import './styles/base/typography.css';
 
 /* Elements */
 @import './styles/elements/logo.css';
-@import './styles/elements/tips.css';
-@import './styles/elements/inputs.css';
-@import './styles/elements/custom-tip.css';
+@import './styles/elements/reset-button.css';
+
+/* Widgets */
+@import './styles/widgets/display.css';
+@import './styles/widgets/payment.css';
 
 /* Layout */
 @import './styles/layout/tip-calculator.css';

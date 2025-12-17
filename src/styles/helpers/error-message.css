@@ -1,4 +1,4 @@
 .error-message {
-  color: var(--error-msg-color);
   display: none;
+  padding-left: 1rem;
 }
